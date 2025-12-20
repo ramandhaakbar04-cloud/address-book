@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Address Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <header class="bg-blue-600 text-white py-4">
+    <h1 class="text-center text-2xl font-bold">
+      📒 Address Book
+    </h1>
+  </header>
+
+  <!-- MAIN -->
+  <main class="flex-1 container mx-auto p-4">
+
+    <!-- FORM SECTION -->
+    <section class="bg-white p-6 rounded shadow mb-6">
+      <h2 class="text-xl font-semibold mb-4">Tambah Kontak</h2>
+
+      <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block mb-1">Nama</label>
+          <input type="text" id="name" class="w-full border p-2 rounded">
+        </div>
+
+        <div>
+          <label class="block mb-1">No. Telepon</label>
+          <input type="text" id="phone" class="w-full border p-2 rounded">
+        </div>
+
+        <div>
+          <label class="block mb-1">Email</label>
+          <input type="email" id="email" class="w-full border p-2 rounded">
+        </div>
+
+        <div>
+          <label class="block mb-1">Lokasi</label>
+          <input type="text" id="location" class="w-full border p-2 rounded">
+        </div>
+
+        <div class="md:col-span-2">
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+            Tambah Kontak
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- LIST SECTION -->
+    <section>
+      <h2 class="text-xl font-semibold mb-4">Daftar Kontak</h2>
+      <div id="contactList" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->~
+  <footer class="bg-gray-800 text-white text-center py-3">
+    <p>&copy; 2025 Address Book App</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
